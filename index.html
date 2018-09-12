@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="bootstrap/3.3.7/css/bootstrap-cerulean-grn99.min.css">
+  <link rel="stylesheet" href="font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="jquery/3.3.1/jquery.min.js"></script> 
+  <script src="bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <script src='js/paramsQ-bs.js'></script>
+	<script src='js/layoutQA.js'></script>	
+	<script src='js/setDat.js'></script>
+	<script src='js/genQA-bs.js'></script>
+</head>
+
+<body>
+	
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html"><img alt="BQ Logo" style="margin-top: -10px" src="BQ-2.png" height="40" width="51"></img></a>
+      <a class="navbar-brand" href="index.html">BibleQuiz</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" id ="topicsListNB" href="#">Topics<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"  onclick="topic = creation; topicQ = 'Creation'; noteTopic(topicQ);alert('Please choose total number of quiz questions below.');">Creation</a></li>
+             <li><a href="#"  onclick="topic = christmas; topicQ = 'Christmas'; noteTopic(topicQ);alert('Please choose total number of quiz questions below.');">Christmas</a></li>
+             <li><a href="#"  onclick="topic = easter; topicQ = 'Easter'; noteTopic(topicQ);alert('Please choose total number of quiz questions below.');">Easter</a></li>
+             <li><a href="#"  onclick="topic = matthew; topicQ = 'Matthew'; noteTopic(topicQ);alert('Please choose total number of quiz questions below.');">Matthew</a></li>
+             <li><a href="#"  onclick="topic = genesis; topicQ = 'Genesis'; noteTopic(topicQ);alert('Please choose total number of quiz questions below.');">Genesis</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="fa fa-github"></span> GitHub<span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="https://github.com/justineuro/BibleQuiz"><span class="fa fa-github-square"></span> GitHub Site</a></li>
+						<li><a href="https://github.com/justineuro/BibleQuiz/archive/master.zip"><span class="fa fa-download"></span> .zip</a></li>
+						<li><a href="https://github.com/justineuro/BibleQuiz/archive/master.tar.gz"><span class="fa fa-download"></span> .tar.gz</a></li>
+					</ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+	#main {
+		padding: 15px;
+	}
+</style>
+
+<div id="main">
+<center>
+
+<div id="chooseTopic">
+	<h4>Please choose a topic:</h4>
+	<button id="Creation" type="button" class="btn btn-primary" onclick="topic = creation; topicQ = 'Creation'; noteTopic(topicQ);">Creation</button>
+	<br><br>
+	<button id="Christmas" type="button" class="btn btn-primary" onclick="topic = christmas; topicQ = 'Christmas'; noteTopic(topicQ);">Christmas</button>
+	<br><br>
+	<button id="Easter" type="button" class="btn btn-primary" onclick="topic = easter; topicQ = 'Easter'; noteTopic(topicQ);">Easter</button>
+	<br><br>
+	<button id="Matthew" type="button" class="btn btn-primary" onclick="topic = matthew; topicQ = 'Matthew'; noteTopic(topicQ);">Matthew</button>
+	<br><br>
+	<button id="Genesis" type="button" class="btn btn-primary" onclick="topic = genesis; topicQ = 'Genesis'; noteTopic(topicQ);">Genesis</button>
+</div>
+<div id="notifyTopic"></div>
+
+<div id="chooseTotalQ"></div>
+
+</center>
+</div> 
+
+</body>
+</html>
