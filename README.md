@@ -1,6 +1,6 @@
 ## <img alt="BQ Logo" src="BQ-2.png" style="margin-bottom: -5px" height="40" width="51" valign="bottom"></img>**BibleQuiz**
 
-[**BibleQuiz**] is meant as a question-and-answer familiarizer to Holy Scriptures.  This repository contains the web site that is included in the app.
+[**BibleQuiz**](https://justineuro.github.io/BibleQuiz) is meant as a question-and-answer familiarizer to Holy Scriptures.  This repository contains the web site that is included in the app.  The `src` folder for the app is available at [**BibleQuiz-src**](https://justineuro.github.io/BibleQuiz-src) 
 
 A demo can be found at [https://justineuro.github.io/BibleQuiz](https://justineuro.github.io/BibleQuiz).  A pre-release Android app is available: [biblequiz-v.0.0.0-pre-release.apk](https://github.com/justineuro/TEO/releases/download/pre-release-v.0.0.0/biblequiz-v.0.0.0-pre-release.apk).
 
