@@ -1,1 +1,1 @@
-/home/juro/Public/BibleQuiz/index.html
+index.html
