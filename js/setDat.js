@@ -12,8 +12,8 @@ var creation = [
 [ "In the Book of Genesis, the  phrase ‘Let us make man in our _____,  after our _____ .‘  What two words should appear in the blanks?", "Image and likeness (Gn 1:26)" ],
 [ "In which day of Creation did God create our first parents?", "Sixth day (Gn 1:26-31)" ],
 [ "In which day of Creation did God create day and night?", "First day (Gn 1:3-5)" ],
-[ "In which day of Creation did God create the dome (or firmament) called ‘the sky’ (or Heaven)?", "Third day (Gn 1:6-8)" ],
-[ "On the fourth day of Creation what did God create aside from land and land vegetation?", "The Sea (Gn 1:9-13)" ],
+[ "In which day of Creation did God create the dome (or firmament) called ‘the sky’ (or Heaven)?", "Second day (Gn 1:6-8)" ],
+[ "On the third day of Creation what did God create aside from land and land vegetation?", "The Sea (Gn 1:9-13)" ],
 [ "On the fifth day of Creation what aquatic mammal was particularly mentioned as having been created by God?", "(Great) whale (Gn 1:)" ],
 [ "In the Second Story of Creation, what watered the earth before there was rain?", "A stream was welling out of the earth. (Gn 2:6)" ],
 [ "In the Second Story of Creation, after God created man he placed him in a garden located in a region whose name means ‘fertile plain’ in  Sumerian.  What is the name of this place?", "Eden (Gn 2:8)" ],
@@ -31,7 +31,7 @@ var creation = [
 [ "In the Book of Genesis, the name of which man was first mentioned?", "Cain (Gn 4:1)" ],
 [ "Which of the sons of the first man was a keeper of the flocks?", "His second son or Abel (Gn 4:2)" ],
 [ "Which of the sons of the first man was a tiller of the soil?", "His eldest son or Cain (Gn 4:2)" ],
-[ "In which Chapter of the Book of Genesis was the name of Adam first mentioned?", "Chapter 4 (Gn 4:25)" ],
+[ "In which Chapter of the Book of Genesis was the name of Adam first mentioned?", "Chapter 4 (Gn 4:25)" ], 
  ];
 creation = creation.sort(function(a, b){return 0.5 - Math.random()});
 
@@ -141,8 +141,8 @@ genesis = [
 [ "In the Book of Genesis, the  phrase ‘Let us make man in our _____,  after our _____ .‘  What two words should appear in the blanks?", "Image and likeness (Gn 1:26)" ],
 [ "In which day of Creation did God create our first parents?", "Sixth day (Gn 1:26-31)" ],
 [ "In which day of Creation did God create day and night?", "First day (Gn 1:3-5)" ],
-[ "In which day of Creation did God create the dome (or firmament) called ‘the sky’ (or Heaven)?", "Third day (Gn 1:6-8)" ],
-[ "On the fourth day of Creation what did God create aside from land and land vegetation?", "The Sea (Gn 1:9-13)" ],
+[ "In which day of Creation did God create the dome (or firmament) called ‘the sky’ (or Heaven)?", "Second day (Gn 1:6-8)" ],
+[ "On the third day of Creation what did God create aside from land and land vegetation?", "The Sea (Gn 1:9-13)" ],
 [ "On the fifth day of Creation what aquatic mammal was particularly mentioned as having been created by God?", "(Great) whale (Gn 1:)" ],
 [ "In the Second Story of Creation, what watered the earth before there was rain?", "A stream was welling out of the earth. (Gn 2:6)" ],
 [ "In the Second Story of Creation, after God created man he placed him in a garden located in a region whose name means ‘fertile plain’ in  Sumerian.  What is the name of this place?", "Eden (Gn 2:8)" ],
@@ -175,6 +175,6 @@ genesis = [
 [ "On which mountain range did Noah’s Ark come to rest when the flood subsided?", "Mountains of Ararat (Gn 8:4)" ],
 [ "Who was known as a tiller of the soil and was the first to plant a vineyard?", "Noah (Gn 9:21)" ],
 [ "Which of Noah’s son was the youngest?", "Ham (Gn 9:24)" ],
-[ "How many years was the whole lifetime of Noah?", "950 (Gn 9:29)" ],  
+[ "How many years was the whole lifetime of Noah?", "950 (Gn 9:29)" ],   
 ];
 genesis = genesis.sort(function(a, b){return 0.5 - Math.random()});
