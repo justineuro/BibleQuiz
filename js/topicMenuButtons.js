@@ -15,6 +15,7 @@ function addTopicsTable(pairedTopicsList) {
 			pairs.push([[],'[ - ]']);
 		}
 	}
+	document.getElementById('table1').innerHTML += '<caption><center><h4>Please choose a topic:</h4><center></caption><tbody id=' + "'" + 'table1Body' + "'" + '></tbody>';	
 	for (var i = 0; i < pairedTopicsList.length/3; i++) {
 		var rowContent = '';
 		for (var j = 3 * i; j < 3 * (i + 1); j++) {
