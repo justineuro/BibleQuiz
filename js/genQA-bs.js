@@ -13,7 +13,7 @@ function genQ(ind,data) {
 	}
 	var question = dat[i][0];
 	qn = i + 1;
-	document.getElementById("qa").innerHTML = '<div id="question"><a id="qlabel" href="#"><b><u>Question</u>:</b></a><br></div><br><div id="answer"><a id="alabel" href="#" onclick="genA(i,dat);i += 1;"><b><u>Answer</u>:</b></a><br></div><br><br><button id="next" type="button" class="btn btn-primary" onclick="genQ(i,dat);">Next Question</button>';
+	document.getElementById("qa").innerHTML = '<div id="question"><a id="qlabel" href="#"><b><u>Question</u>:</b></a><br></div><br><div id="answer"><a id="alabel" href="#" onclick="genA(i,dat); i +=  1;"><b><u>Answer</u>:</b></a><br></div><br><br><button id="next" type="button" class="btn btn-primary" onclick="genQ(i,dat);">Next Question</button>';
 	document.getElementById("question").innerHTML +=  '<b>' + qn + '. </b>' + question;
 	document.getElementById("end").innerHTML = '<div id="endInfo"></div>';
 }
@@ -25,6 +25,6 @@ function genA(ind,data) {
 	var question = dat[i][0];
 	var answer = dat[i][1];
 	if (document.getElementById("question").innerHTML == '<a id="qlabel" href="#"><b><u>Question</u>:</b></a><br>' + '<b>' + qn + '. </b>' +  question) {
-		document.getElementById("answer").innerHTML += answer;
+		document.getElementById("answer").innerHTML = '<a id="alabel" href="#" onclick="genA(i-1,dat)"><b><u>Answer</u>:</b></a><br>' + answer;
 	}
 }

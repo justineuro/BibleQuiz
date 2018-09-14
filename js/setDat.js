@@ -1,3 +1,11 @@
+datList = ['creation', 'christmas', 'easter', 'matthew', 'genesis', 'mark', 'luke', 'john' ];
+topicsList = [ 'Creation', 'Christmas', 'Easter', 'Matthew', 'Genesis', 'Mark', 'Luke', 'John' ];
+
+pairedTopicsList = [];
+for (var i = 0; i < datList.length; i++) {
+	pairedTopicsList[i] = [datList[i], topicsList[i]];
+}
+
 var creation = [ 
 [ "The Book of Genesis opens with the Hebrew word ‘bereshit’, what is this word’s translation into English?", "In the beginning (Gn 1:1)" ],
 [ "After putting the man to a deep sleep what did the Lord God take from him to build into a woman?", "A rib (Gn 1:21)" ],
@@ -72,26 +80,26 @@ var christmas = [
 christmas = christmas.sort(function(a, b){return 0.5 - Math.random()});
 
 var easter = [ 
+[ "At the start of the Resurrection narrative in St. John’s Gospel, who was mentioned as going to the tomb of Jesus early in the morning and seeing the stone removed?", "Mary of Magdala (Jn 20:1)" ],
+[ "In the Resurrection narrative in St. John’s Gospel, when the Risen Lord first appeared to Mary Magdalene, she mistook him for whom?", "The gardener (Jn 20:15)" ],
+[ "In the Resurrection narrative in St. John’s Gospel, when the Risen Lord first appeared to Mary Magdalene, what word did the Lord Jesus exclaim to her leading her to consequently recognize him?", "Her name (‘Mary!’) (Jn 20:16)" ],
+[ "In the Resurrection narrative in St. John’s Gospel, when the Risen Lord first appeared to Mary Magdalene, what Hebrew word did she use to address him soon after she had recognized him?", "Rabbouni (meaning Teacher) (Jn 20:16)" ],
+[ "In St. John’s Gospel, on the first day of the week of the Resurrection, what did the Lord Jesus say before showing them his hands and side for them to examine?", "Peace be with you. (Jn 20:19-20)" ],
+[ "In the Resurrection narrative in St. John’s Gospel, ‘the disciple whom Jesus loved’ refers to which particular disciple?", "John the Evangelist (Jn 20:2)" ],
+[ "In the Resurrection narrative in St. John’s Gospel, who were the first among the disciples to be informed by Mary Magdalene about the opened tomb?", "Peter and John (Jn 20:2)" ],
+[ "Which of the remaining eleven apostles was absent when the Risen Lord Jesus first appeared in their midst?", "Thomas the Twin (Didymus) (Jn 20:24)" ],
+[ "When the Risen Lord Jesus revealed himself to the apostles the second time, what did Thomas exclaim after Jesus allowed him to examine the nailmarks on his hands and his side? ", "My Lord and my God! (Jn 20:28)" ],
+[ "When the Risen Lord Jesus revealed himself to the disciples  the third time, he also led them to make a large catch of fish after instructing them to cast their nets on the right side of their boat.  How many fishes were in that large catch? ", "153 (Jn 21:11)" ],
+[ "How many disciples were present in the Sea of Tiberias when the Risen Lord revealed himself to them the third time?", "Seven (Jn 21:2)" ],
+[ "In the Resurrection narrative in St. John’s Gospel, why was Mary requested by the Lord Jesus to stop holding on to him?", "Because he had not ascended to the Father (Jn  20:17)" ],
 [ "According to the Gospel of St. Matthew, which two persons among the close friends of Jesus were the first to see the empty tomb?", "Mary of Magdala and Mary of Cleofas (Mt 28:1)" ],
 [ "According to the Gospel of St. Matthew, who rolled back the stone to reveal the empty tomb of Jesus?", "An angel that descended from heaven (Mt 28:2)" ],
 [ "According to the Gospel of St. Matthew, what unusual geophysical event occurred a few moments before the empty tomb was opened?", "An earthquake (Mt 28:2)" ],
 [ "According to the Gospel of St. Matthew, who were the witnesses that became fearful like dead men at the opening of the empty tomb ? ", "The guards (Mt 28:4)" ],
-[ "According to the Gospel of St. Matthew, what did the chief priests instruct the guards to tell, in exchange for a large sum of money. regarding the empty tomb in the resurrection event? ", "That his disciples came by night to steal his body while they were asleep (Mt 28:12-13)" ],
-[ "'And I am with you always, until the end of the age’, the last line in the Gospel of St. Matthew, is said to be an echo of what particular name given to the Lord?", "Emmanuel (Mt 28:20b)" ],
-[ "According to the last passage in the Gospel of St. Matthew, what did the Risen Lord instruct the disciples to do during their meeting on the mountain previously indicated to them by the Lord?", "To go and make disciples of all nations, baptizing them in the Name of the Trinity (Mt 28:16-19)" ],
 [ "According to St. Matthew’s Gospel, after the two persons who were close to Jesus and who were first to see the empty tomb  embraced his feet, he  instructed them to tell his brother disciples that they were to go where to see him?", "To Galilee (Mt 28:10)" ],
-[ "At the start of the Resurrection narrative in St. John’s Gospel, who was mentioned as going to the tomb of Jesus early in the morning and seeing the stone removed?", "Mary of Magdala (Jn 20:1)" ],
-[ "In the Resurrection narrative in St. John’s Gospel, ‘the disciple whom Jesus loved’ refers to which particular disciple?", "John the Evangelist (Jn 20:2)" ],
-[ "In the Resurrection narrative in St. John’s Gospel, who were the first among the disciples to be informed by Mary Magdalene about the opened tomb?", "Peter and John (Jn 20:2)" ],
-[ "In the Resurrection narrative in St. John’s Gospel, when the Risen Lord first appeared to Mary Magdalene, she mistook him for whom?", "The gardener (Jn 20:15)" ],
-[ "In the Resurrection narrative in St. John’s Gospel, when the Risen Lord first appeared to Mary Magdalene, what word did the Lord Jesus exclaim to her leading her to consequently recognize him?", "Her name (‘Mary!’) (Jn 20:16)" ],
-[ "In the Resurrection narrative in St. John’s Gospel, when the Risen Lord first appeared to Mary Magdalene, what Hebrew word did she use to address him soon after she had recognized him?", "Rabbouni (meaning Teacher) (Jn 20:16)" ],
-[ "In the Resurrection narrative in St. John’s Gospel, why was Mary requested by the Lord Jesus to stop holding on to him?", "Because he had not ascended to the Father (Jn  20:17)" ],
-[ "In St. John’s Gospel, on the first day of the week of the Resurrection, what did the Lord Jesus say before showing them his hands and side for them to examine?", "Peace be with you. (Jn 20:19-20)" ],
-[ "Which of the remaining eleven apostles was absent when the Risen Lord Jesus first appeared in their midst?", "Thomas the Twin (Didymus) (Jn 20:24)" ],
-[ "When the Risen Lord Jesus revealed himself to the apostles the second time, what did Thomas exclaim after Jesus allowed him to examine the nailmarks on his hands and his side? ", "My Lord and my God! (Jn 20:28)" ],
-[ "How many disciples were present in the Sea of Tiberias when the Risen Lord revealed himself to them the third time?", "Seven (Jn 21:2)" ],
-[ "When the Risen Lord Jesus revealed himself to the disciples  the third time, he also led them to make a large catch of fish after instructing them to cast their nets on the right side of their boat.  How many fishes were in that large catch? ", "153 (Jn 21:11)" ],   
+[ "According to the Gospel of St. Matthew, what did the chief priests instruct the guards to tell, in exchange for a large sum of money. regarding the empty tomb in the resurrection event? ", "That his disciples came by night to steal his body while they were asleep (Mt 28:12-13)" ],
+[ "According to the last passage in the Gospel of St. Matthew, what did the Risen Lord instruct the disciples to do during their meeting on the mountain previously indicated to them by the Lord?", "To go and make disciples of all nations, baptizing them in the Name of the Trinity (Mt 28:16-19)" ],
+[ "'And I am with you always, until the end of the age’, the last line in the Gospel of St. Matthew, is said to be an echo of what particular name given to the Lord?", "Emmanuel (Mt 28:20b)" ],    
 ];
 easter = easter.sort(function(a, b){return 0.5 - Math.random()});
 
@@ -113,17 +121,19 @@ var matthew = [
 [ "Upon the return of the Holy Family from the Egyptian exile, in which town did they reside?", "The Babylonian exile (Mt 2:23)" ],
 [ "Who called the Magi secretly to ask from them the time of the appearance of the star?", "Herod (Mt 2:7)" ],
 [ "What reason for wanting to know where Jesus was to be born did Herod give to the Magi?", "To pay homage to him (Mt 2:8)" ],
-[ "What three gifts did the Magi present to the Lord Jesus?", "Gold, frankincense, myrrh (Mt 2:11)" ],
-[ "The Old Testament quote: ‘Out of Egypt I called my son’, words that was said by the Lord through a prophet, was seen to have been fulfilled as a consequence of the Egyptian exile.  Who was the Old Testament prophet who uttered it?", "The Prophet Hosea (Ho 11:1) (Mt 2:15)" ],
-[ "From the prophecies of which Old Testament prophet did the scribes and priests quote to inform Herod that the Messiah will be born in Bethlehem of Judea?", "The Prophet Micah (Mic 5:1) (Mt 2:6)" ],
+[ "Which prayer in Holy Scripture is the most important prayer since it contains all that we can ever ask of God?", "The Lord’s Prayer (Mt 6:913)" ],
+[ "Name one of the two petitions that are absent in the Lucan version of the Lord’s Prayer but present in the Matthean version?", "'Thy will be done’ or ‘Deliver us from all evil’ (Mt 6:913)" ],
 [ "According to the Gospel of St. Matthew, which two persons among the close friends of Jesus were the first to see the empty tomb?", "Mary of Magdala and Mary of Cleofas (Mt 28:1)" ],
 [ "According to the Gospel of St. Matthew, who rolled back the stone to reveal the empty tomb of Jesus?", "An angel that descended from heaven (Mt 28:2)" ],
 [ "According to the Gospel of St. Matthew, what unusual geophysical event occurred a few moments before the empty tomb was opened?", "An earthquake (Mt 28:2)" ],
 [ "According to the Gospel of St. Matthew, who were the witnesses that became fearful like dead men at the opening of the empty tomb ? ", "The guards (Mt 28:4)" ],
+[ "According to St. Matthew’s Gospel, after the two persons who were close to Jesus and who were first to see the empty tomb  embraced his feet, he  instructed them to tell his brother disciples that they were to go where to see him?", "To Galilee (Mt 28:10)" ],
 [ "According to the Gospel of St. Matthew, what did the chief priests instruct the guards to tell, in exchange for a large sum of money. regarding the empty tomb in the resurrection event? ", "That his disciples came by night to steal his body while they were asleep (Mt 28:12-13)" ],
-[ "'And I am with you always, until the end of the age’, the last line in the Gospel of St. Matthew, is said to be an echo of what particular name given to the Lord?", "Emmanuel (Mt 28:20b)" ],
 [ "According to the last passage in the Gospel of St. Matthew, what did the Risen Lord instruct the disciples to do during their meeting on the mountain previously indicated to them by the Lord?", "To go and make disciples of all nations, baptizing them in the Name of the Trinity (Mt 28:16-19)" ],
-[ "According to St. Matthew’s Gospel, after the two persons who were close to Jesus and who were first to see the empty tomb  embraced his feet, he  instructed them to tell his brother disciples that they were to go where to see him?", "To Galilee (Mt 28:10)" ], 
+[ "'And I am with you always, until the end of the age’, the last line in the Gospel of St. Matthew, is said to be an echo of what particular name given to the Lord?", "Emmanuel (Mt 28:20b)" ],
+[ "What three gifts did the Magi present to the Lord Jesus?", "Gold, frankincense, myrrh (Mt 2:11)" ],
+[ "The Old Testament quote: ‘Out of Egypt I called my son’, words that was said by the Lord through a prophet, was seen to have been fulfilled as a consequence of the Egyptian exile.  Who was the Old Testament prophet who uttered it?", "The Prophet Hosea (Ho 11:1) (Mt 2:15)" ],
+[ "From the prophecies of which Old Testament prophet did the scribes and priests quote to inform Herod that the Messiah will be born in Bethlehem of Judea?", "The Prophet Micah (Mic 5:1) (Mt 2:6)" ], 
 ]
 matthew = matthew.sort(function(a, b){return 0.5 - Math.random()});
 
@@ -178,3 +188,5 @@ genesis = [
 [ "How many years was the whole lifetime of Noah?", "950 (Gn 9:29)" ],   
 ];
 genesis = genesis.sort(function(a, b){return 0.5 - Math.random()});
+
+

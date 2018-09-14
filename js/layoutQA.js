@@ -1,6 +1,9 @@
 function loadTopic(topicQ,topic) {
 	document.getElementById("topicsListNB").remove();
-	document.getElementById("chooseTopic").remove();
+	document.getElementById("table1").remove();
+	/* Used if chooseTOpic div instead of table1 is used
+	 document.getElementById("chooseTopic").remove();
+	 */
 	document.getElementById("notifyTopic").remove();
 	document.getElementById("chooseTotalQ").remove();
 	/* Build up the Q# button list */
