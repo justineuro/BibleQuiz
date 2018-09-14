@@ -1,6 +1,6 @@
-## <img alt="BQ Logo" src="BQ-2.png" style="margin-bottom: -5px" height="40" width="51" valign="bottom"></img>**BibleQuiz**
+## <img alt="BQ Logo" src="BQ-2.png" style="margin-bottom: -5px" height="40" width="51" valign="bottom"></img>**BibleQuiz-alpha**
 
-[**BibleQuiz**](https://justineuro.github.io/BibleQuiz) is meant as a question-and-answer familiarizer to Holy Scriptures.  This repository contains the web site that is included in the app.  
+[**BibleQuiz**](https://justineuro.github.io/BibleQuiz) is meant as a question-and-answer familiarizer to Holy Scriptures.  This repository, [**BibleQuiz-alpha**](https://justineuro.github.io/BibleQuiz-alpha); contains the rough development version of the web site that is included in the app.  
 
 A demo can be found at [https://justineuro.github.io/BibleQuiz](https://justineuro.github.io/BibleQuiz).  A pre-release Android app is available: [biblequiz-v.0.0.0-pre-release.apk](https://github.com/justineuro/BibleQuiz/releases/download/pre-release-v.0.0.0/biblequiz-v.0.0.0-pre-release.apk).  The `src` folder used in making the Android app is available at [**BibleQuiz-src**](https://justineuro.github.io/BibleQuiz-src) 
 
@@ -19,7 +19,7 @@ Special thanks to [W3Schools](https://www.w3schools.com/) for their tutorials on
      href="https://github.com/justineuro">
     <span property="dct:title">Justine Leon A. Uro</span></a>
   has waived all copyright and related or neighboring rights to
-  <span property="dct:title"><a href="https://github.com/justineuro/BibleQuiz">BibleQuiz</a></span>.
+  <span property="dct:title"><a href="https://github.com/justineuro/BibleQuiz-alpha">BibleQuiz-alpha</a></span>.
 This work is published from:
 <span property="vcard:Country" datatype="dct:ISO3166"
       content="PH" about="https://github.com/justineuro/BibleQuiz">
