@@ -1,5 +1,5 @@
-datList = ['creation', 'christmas', 'easter', 'matthew', 'genesis', 'mark', 'luke', 'john' ];
-topicsList = [ 'Creation', 'Christmas', 'Easter', 'Matthew', 'Genesis', 'Mark', 'Luke', 'John' ];
+datList = ['creation', 'christmas', 'easter', 'matthew', 'genesis', 'mark', 'luke', 'john', 'apostles' ];
+topicsList = [ 'Creation', 'Christmas', 'Easter', 'Matthew', 'Genesis', 'Mark', 'Luke', 'John', 'Apostles' ];
 
 pairedTopicsList = [];
 for (var i = 0; i < datList.length; i++) {
