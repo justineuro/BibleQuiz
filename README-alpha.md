@@ -7,7 +7,7 @@ A demo can be found at [https://justineuro.github.io/BibleQuiz](https://justineu
 ## Using as a Template
 One can easily modify the available datasets by editing `setDat.js`:
 
-1. Modify the first two lines of `swtDat.js` to add more topics.  Simply add entries to the data label array (`datList`) and the topic array (`topicsList`).
+1. Modify the first two lines of `setDat.js` to add more topics.  Simply add entries to the data label array (`datList`) and the topic array (`topicsList`).
 2. Add the additional datasets at the bottom of `setDat.js` as arrays.
 3. One may opt to randomize the questions by using the sort() and compare function.  See the examples given at the end of each data array already in `setDat.js`.
 
