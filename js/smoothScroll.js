@@ -1,7 +1,6 @@
 /* 
  A script used for scrolling to a targeted section of the page.
- Source: https://stackoverflow.com/questions/18071046/smooth-scroll-to-specific-div-on-click
-user:nico (https://stackoverflow.com/users/2654866/nico)
+ Source: https://stackoverflow.com/questions/18071046/smooth-scroll-to-specific-div-on-click Author: user:nico (https://stackoverflow.com/users/2654866/nico)
  */
 window.smoothScroll = function(target) {
 	var scrollContainer = target;

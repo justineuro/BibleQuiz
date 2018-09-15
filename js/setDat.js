@@ -1,11 +1,15 @@
-datList = ['creation', 'christmas', 'easter', 'matthew', 'genesis', 'mark', 'luke', 'john', 'apostles' ];
+// create arrays for dataset labels and questions topics
+datList = ['creation', 'christmas', 'easter', 'matthew', 'genesis', 'mark', 'luke', 'john', 'apostle' ];
 topicsList = [ 'Creation', 'Christmas', 'Easter', 'Matthew', 'Genesis', 'Mark', 'Luke', 'John', 'Apostles' ];
 
+// create array of paired dataset and topic
 pairedTopicsList = [];
 for (var i = 0; i < datList.length; i++) {
 	pairedTopicsList[i] = [datList[i], topicsList[i]];
 }
 
+/* create dataset array for each dataset (see datList above);
+ * randomize using sort() and compare function */
 var creation = [ 
 [ "The Book of Genesis opens with the Hebrew word ‘bereshit’, what is this word’s translation into English?", "In the beginning (Gn 1:1)" ],
 [ "After putting the man to a deep sleep what did the Lord God take from him to build into a woman?", "A rib (Gn 1:21)" ],
@@ -188,5 +192,3 @@ genesis = [
 [ "How many years was the whole lifetime of Noah?", "950 (Gn 9:29)" ],   
 ];
 genesis = genesis.sort(function(a, b){return 0.5 - Math.random()});
-
-
