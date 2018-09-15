@@ -122,7 +122,7 @@ var matthew = [
 [ "In the Old testament prophecy referring to the massacre of the Holy Innocents, who was lamenting for her children", "Rachel (Mt 2:17)" ],
 [ "What sign did the Magi see that led them to find the Lord Jesus?", "A Star (they saw his star at its rising) (Mt 2:2)" ],
 [ "Upon the return of the Holy Family from the Egyptian exile, who was reigning as King of Judea?", "Archelaus (son of Herod) (Mt 2:22)" ],
-[ "Upon the return of the Holy Family from the Egyptian exile, in which town did they reside?", "The Babylonian exile (Mt 2:23)" ],
+[ "Upon the return of the Holy Family from the Egyptian exile, in which town did they reside?", "Nazareth (in Galilee) (Mt 2:23)" ],
 [ "Who called the Magi secretly to ask from them the time of the appearance of the star?", "Herod (Mt 2:7)" ],
 [ "What reason for wanting to know where Jesus was to be born did Herod give to the Magi?", "To pay homage to him (Mt 2:8)" ],
 [ "Which prayer in Holy Scripture is the most important prayer since it contains all that we can ever ask of God?", "The Lord’s Prayer (Mt 6:913)" ],
