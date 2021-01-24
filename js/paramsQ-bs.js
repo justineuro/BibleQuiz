@@ -1,9 +1,10 @@
-// initialize variables
-topicQ = ''; // question topic
-totalQ = ''; // total number of questions for created quiz
-topic = []; // data array for topic
-dat = []; // truncated data array; depends on totalQ
-i = 0; // currently chosen item number
+// initialize variables of global scope
+var topicQ = ''; // question topic
+var totalQ = ''; // total number of questions for created quiz
+var topic = []; // data array for topic
+var dat = []; // truncated data array; depends on totalQ
+var i = 0; // currently chosen item number
+var qn = 0; // currently chosen item number within genQ and genA
 
 // function to make white foreground for topics button
 function txtWhite(value,index,array) {

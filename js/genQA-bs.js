@@ -12,13 +12,13 @@ function genQ(ind,data) {
 		document.getElementById("endInfo").innerHTML = '<center><h4>*** End of Quiz! ***</h4><center><br><h4>Use the <a href="#"><b>Q#</b></a> button above to return to a previous number of the quiz or the button below to create a new quiz.</h4><button type="button" class="btn btn-primary" onclick="location.reload()"><b>Create new quiz</b></button>';
 	};
 	if (i < dat.length) { // if not last item remove div endInfo; added to allow review 
-		document.getElementById("endInfo").remove();
-	}
+	document.getElementById("endInfo").remove();
 	var question = dat[i][0];
 	qn = i + 1;
-	document.getElementById("qa").innerHTML = '<div id="question"><a id="qlabel" href="#"><b><u>Question</u>:</b></a><br></div><br><div id="answer"><a id="alabel" href="#" onclick="genA(i,dat); i +=  1;"><b><u>Answer</u>:</b></a><br></div><br><br><button id="next" type="button" class="btn btn-primary" onclick="genQ(i,dat);">Next Question</button>';
+	document.getElementById("qa").innerHTML = '<div id="question"><a id="qlabel" href="#"><b><u>Question</u>:</b></a><br></div><br><div id="answer"><a id="alabel" href="#" onclick="genA(i,dat);"><b><u>Answer</u>:</b></a><br></div><br><br><button id="next" type="button" class="btn btn-primary" onclick=" i +=  1;genQ(i,dat);">Next Question</button>';
 	document.getElementById("question").innerHTML +=  '<b>' + qn + '. </b>' + question;
 	document.getElementById("end").innerHTML += '<div id="endInfo"></div>';
+	}
 }
 
 /* function for generating Answer link and preventive measure for additional clicks that 
@@ -29,9 +29,14 @@ function genA(ind,data) {
 	qn = i + 1;
 	var question = dat[i][0];
 	var answer = dat[i][1];
-	/* check for additional clicks on Answer; re-create Answer link: drop 1 from i and 
+	/* check for additional clicks on Answer; re-create Answer link;  
 	 * remove i++ on 1st click */
-	if (document.getElementById("question").innerHTML == '<a id="qlabel" href="#"><b><u>Question</u>:</b></a><br>' + '<b>' + qn + '. </b>' +  question) {
-		document.getElementById("answer").innerHTML = '<a id="alabel" href="#" onclick="genA(i-1,dat)"><b><u>Answer</u>:</b></a><br>' + answer;
+	if (document.getElementById("question").innerHTML.includes(question)) {// print answer for currently displayed question only
+		document.getElementById("answer").innerHTML = '<a id="alabel" href="#" onclick="genA(i,dat)"><b><u>Answer</u>:</b></a><br>' + answer;
+	}
+	else {// decrease incremented question number by 1 and re-create page of previous question; not really needed but used for debugging
+		qn = qn - 1;
+		i = qn;
+		genQ(i,dat);
 	}
 }
